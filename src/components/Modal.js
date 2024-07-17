@@ -20,7 +20,7 @@ const Modal = ({ onClose, onSubmit }) => {
         id="default-modal"
         tabIndex="-1"
         aria-hidden="true"
-        className="fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-50"
+        className="fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-70"
       >
         <div className="relative p-4 w-full max-w-2xl max-h-full">
           <div className="relative bg-white rounded-lg shadow dark:bg-zinc-900">

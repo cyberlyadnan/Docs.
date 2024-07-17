@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-*body{
-    font-family: "Gilroy";
-    cursor: url('https://cdn-icons-png.flaticon.com/512/3771/3771695.png') 16 16, auto;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serify ;
+    
 }
 
 ::selection{
