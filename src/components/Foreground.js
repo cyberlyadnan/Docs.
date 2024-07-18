@@ -8,6 +8,8 @@ const Foreground = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [notes, setNotes] = useState([]);
   const [editingNote, setEditingNote] = useState(null);
+  const colors = ["bg-green-600","bg-blue-600","bg-red-600"]
+
 
   useEffect(() => {
     const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
@@ -59,11 +61,13 @@ const Foreground = () => {
             note={editingNote}
           />
         )}
-        {notes.map((note) => (
+        
+        {notes.map((note) =>(
           <Card
             key={note.id}
             reference={ref}
             note={note}
+            color={colors[Math.floor(Math.random() * 3)]}
             onEdit={() => handleEditNote(note)}
             onDelete={() => handleDeleteNote(note.id)}
           />
