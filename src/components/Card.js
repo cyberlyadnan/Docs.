@@ -57,7 +57,7 @@ const Card = ({ reference, note, onEdit, onDelete , color}) => {
       dragElastic={0.2}
       className="relative w-5.5/12 h-[300px] sm:w-60 sm:h-72 lg:w-60 lg:h-72 rounded-[20px] lg:rounded-[35px] bg-zinc-800/70 text-white px-3 py-8 lg:px-5 lg:py-10 overflow-hidden cursor-pointer"
     >
-      <div className="flex items-center justify-between"><FaRegFileAlt /> <span className="lg:text-[10px] text-[10px]">{note.time.slice(0,5)} | {note.date}</span></div>
+      <div className="flex items-center justify-between"><FaRegFileAlt /> <span className="lg:text-[10px] text-[10px]">{note.time.slice(0,4)} | {note.date}</span></div>
       <p className="text-sm lg:text-xm leading-tight mt-3 lg:mt-5 font-semibold">
         {note.content.slice(0, 70)}
       </p>
@@ -82,7 +82,7 @@ const Card = ({ reference, note, onEdit, onDelete , color}) => {
             </span>
           </span>
         </div>
-        <div className={`tag w-full py-2 lg:py-3 ${color} flex items-center justify-center px-8`}>
+        <div className={`tag w-full py-2 px-5 lg:px-8 lg:py-3 ${color} flex items-center justify-center`}>
           <h3 className="text-md">Download Now</h3>
         </div>
       </div>
